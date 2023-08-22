@@ -13,7 +13,16 @@ public class FunctionalExercise {
 
     private static void printAllStringsInList(List<String> course) {
 
+//        course.stream()
+//                .forEach(System.out::println);
+
+//        course.stream()
+//                .filter(str -> str.length()>=4)
+//                .forEach(System.out::println);
+
         course.stream()
+                .filter(str -> str.length()>3)
+                .map(str -> str + " "+ str.length())
                 .forEach(System.out::println);
     }
 }
