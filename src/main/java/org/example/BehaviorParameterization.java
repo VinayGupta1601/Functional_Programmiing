@@ -13,6 +13,7 @@ public class BehaviorParameterization {
         filterAndPrint(numbers,x -> x%2 == 0);
         System.out.println("Multiples of three!!");
         filterAndPrint(numbers,x -> x%3 == 0);
+        System.out.println("Completed");
 
     }
 
